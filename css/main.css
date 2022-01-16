@@ -32,6 +32,9 @@ a {
   background-color: #000000;
 }
 
+.main-heading {
+}
+
 /* End Components */
 
 /* Start Grouping Style */
@@ -52,6 +55,12 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 426px) {
+  .topbar {
+    text-align: center;
+  }
+}
+
 /*  End Section Top Bar  */
 
 /* Start Section Navbar */
@@ -68,8 +77,10 @@ a {
   color: #000000;
 }
 
-.navbar .navbar-collapse .navbar-nav .dropdown:hover > .dropdown-menu {
-  display: block;
+@media (min-width: 769px) {
+  .navbar .navbar-collapse .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
 }
 
 .navbar .navbar-collapse .navbar-nav .dropdown ul.dropdown-menu,
@@ -145,6 +156,17 @@ a {
   background-color: #000000;
 }
 
+@media (max-width: 768px) {
+  .navbar .navbar-toggler {
+    background-color: var(--mainColor);
+    box-shadow: none;
+  }
+
+  .navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
 /* End Section Navbar */
 
 /* Start Section Slider */
@@ -193,9 +215,29 @@ a {
   opacity: 1;
 }
 
+
+
+@media (max-width: 768px) {
+  .carousel.slider .carousel-inner .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .carousel.slider .carousel-inner .carousel-item .carousel-caption {
+    width: 75%;
+    top: 50%;
+  }
+}
+
 /* End Section Slider */
 
 /* Start Section Intro  */
+
+@media (max-width: 426px) {
+  .intro {
+    text-align: center;
+  }
+}
 
 /* End Section Intro  */
 
@@ -243,6 +285,12 @@ a {
 /* End Section Statistics */
 
 /* Start Section About */
+
+@media (max-width: 426px) {
+  .about-image {
+    margin-bottom: 30px;
+  }
+}
 
 /* End Section About */
 
@@ -418,12 +466,8 @@ a {
 .happy-clients .clients .client {
   border: 1px solid #ddd;
   padding: 10px;
-  width: fit-content;
   margin-bottom: 30px;
   height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
