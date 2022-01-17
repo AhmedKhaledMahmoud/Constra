@@ -215,8 +215,6 @@ a {
   opacity: 1;
 }
 
-
-
 @media (max-width: 768px) {
   .carousel.slider .carousel-inner .carousel-item img {
     height: 100vh;
@@ -614,5 +612,26 @@ a {
 }
 /* End Section Copyrights */
 
+/* Start Button Go To Up */
 
-  
+.go-to-up {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #212529;
+  color: var(--mainColor);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: var(--mainTransition);
+  opacity: 0;
+}
+
+.go-to-up:hover {
+  color: #fff;
+}
+/* End Buttom Go To Up */

@@ -483,7 +483,7 @@
 
     <!-- Start Section About -->
 
-    <section class="about pt-5 pb-5">
+    <section class="about pt-5">
       <div class="container">
         <div class="heading text-center mb-5">
           <p class="mb-2 fw-light">We Are Specialists In</p>
@@ -492,7 +492,7 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="about-details">
-              <div class="card mb-3 border-0">
+              <div class="card mt-5 mb-5 border-0">
                 <div class="row g-0">
                   <div class="col-3">
                     <img
@@ -514,7 +514,7 @@
               </div>
             </div>
             <div class="about-details">
-              <div class="card mb-3 border-0">
+              <div class="card mb-5 border-0">
                 <div class="row g-0">
                   <div class="col-3">
                     <img
@@ -536,7 +536,7 @@
               </div>
             </div>
             <div class="about-details">
-              <div class="card mb-3 border-0">
+              <div class="card mb-5 border-0">
                 <div class="row g-0">
                   <div class="col-3">
                     <img
@@ -569,7 +569,7 @@
           </div>
           <div class="col-lg-4">
             <div class="about-details">
-              <div class="card mb-3 border-0">
+              <div class="card mt-5 mb-5 border-0">
                 <div class="row g-0">
                   <div class="col-3">
                     <img
@@ -591,7 +591,7 @@
               </div>
             </div>
             <div class="about-details">
-              <div class="card mb-3 border-0">
+              <div class="card mb-5 border-0">
                 <div class="row g-0">
                   <div class="col-3">
                     <img
@@ -613,7 +613,7 @@
               </div>
             </div>
             <div class="about-details">
-              <div class="card mb-3 border-0">
+              <div class="card mb-5 border-0">
                 <div class="row g-0">
                   <div class="col-3">
                     <img
@@ -652,16 +652,16 @@
         <ul
           class="categories list-unstyled d-flex justify-content-between flex-wrap"
         >
-          <li class="category active fw-bold">Show All</li>
-          <li class="category fw-bold">Commercial</li>
-          <li class="category fw-bold">Education</li>
-          <li class="category fw-bold">Government</li>
-          <li class="category fw-bold">Infrastructure</li>
-          <li class="category fw-bold">Residential</li>
-          <li class="category fw-bold">Healthcare</li>
+          <li class="category active fw-bold" data-group="all">Show All</li>
+          <li class="category fw-bold" data-group="commercial">Commercial</li>
+          <li class="category fw-bold" data-group="education">Education</li>
+          <li class="category fw-bold" data-group="government">Government</li>
+          <li class="category fw-bold" data-group="infrastructure">Infrastructure</li>
+          <li class="category fw-bold" data-group="residential">Residential</li>
+          <li class="category fw-bold" data-group="healthcare">Healthcare</li>
         </ul>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 p-0">
+        <div class="row my-shuffle-container">
+          <div class="col-lg-4 col-md-6 p-0 shuffle-item" data-groups='["commercial"]'>
             <div class="project-image">
               <div class="overlay">
                 <div class="icon text-end">
@@ -679,7 +679,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 p-0">
+          <div class="col-lg-4 col-md-6 p-0 shuffle-item" data-groups='["healthcare"]'>
             <div class="project-image">
               <div class="overlay">
                 <div class="icon text-end">
@@ -697,7 +697,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 p-0">
+          <div class="col-lg-4 col-md-6 p-0 shuffle-item" data-groups='["education"]'>
             <div class="project-image">
               <div class="overlay">
                 <div class="icon text-end">
@@ -715,7 +715,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 p-0">
+          <div class="col-lg-4 col-md-6 p-0 shuffle-item" data-groups='["government"]'>
             <div class="project-image">
               <div class="overlay">
                 <div class="icon text-end">
@@ -733,7 +733,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 p-0">
+          <div class="col-lg-4 col-md-6 p-0 shuffle-item" data-groups='["infrastructure"]'>
             <div class="project-image">
               <div class="overlay">
                 <div class="icon text-end">
@@ -751,7 +751,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 p-0">
+          <div class="col-lg-4 col-md-6 p-0 shuffle-item" data-groups='["residential"]'>
             <div class="project-image">
               <div class="overlay">
                 <div class="icon text-end">
@@ -1166,6 +1166,14 @@
     </section>
 
     <!-- End Section Copyrights -->
+
+    <!-- Start Button Go To Up -->
+
+    <span class="go-to-up">
+      <i class="fas fa-chevron-up"></i>
+    </span>
+
+    <!-- End Button Go To Up -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

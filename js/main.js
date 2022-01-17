@@ -1,9 +1,8 @@
 let statis = $(".statistics").offset().top;
 $(window).scroll(function () {
   let scrollvalue = $(window).scrollTop();
-  
-  if ((scrollvalue >= statis - 600)) {
-      
+
+  if (scrollvalue >= statis - 600) {
     $(".counter").each(function () {
       var $this = $(this),
         countTo = $this.attr("data-count");
@@ -26,7 +25,13 @@ $(window).scroll(function () {
       );
     });
   }
+
+  if (scrollvalue >= 700) {
+    $(".go-to-up").css("opacity", "1");
+    $(".go-to-up").click(function () {
+      $("html, body").scrollTop(0);
+    });
+  } else {
+    $(".go-to-up").css("opacity", "0");
+  }
 });
-
-
-
